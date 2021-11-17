@@ -23,21 +23,21 @@ void loop()
         switch (buttonPresses) {
           case 1:
             insertPassword();
-            buttonPresses =0;
+            buttonPresses = 0;
             break;
           case 2:
             DigiKeyboard.sendKeyStroke(KEY_ENTER);
             DigiKeyboard.delay(500);
             insertPassword();
-            buttonPresses =0;
+            buttonPresses = 0;
             break;
           case 3:
             // statements
             DigiKeyboard.sendKeyStroke(0);
-            buttonPresses =0;
+            buttonPresses = 0;
             break;
           default: 
-            buttonPresses=0;
+            buttonPresses= 0;
           break;
         }
     }
@@ -49,5 +49,5 @@ void insertPassword()
 {
   //DigiKeyboard.println("\n");
   //delay(500);
-  DigiKeyboard.println("pass");
+  DigiKeyboard.println("your password");
 }
